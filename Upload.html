@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/logo-1.png" type="image/png">
     <title>Scapiz</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="assets/logo-1.png" type="image/png">
+    <link rel="stylesheet" href="./Upload.css">
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap" rel="stylesheet">
   </head>
@@ -130,33 +131,17 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    
-    <div class="heading">
-        <h2>Recently Uploaded Researches</h2>
+  <div class="upload-container">
+    <div class="upload-box">
+      <input type="file" id="file-input">
+      <label for="file-input">Upload</label>
+      <button id="submit-btn">Submit</button>
     </div>
-
-    <div class="research-container">
-      <div class="research-item">
-        <embed src="upload/ICT/SAMOSINO_RESLIFE1-ACTIVITY5.pdf" width="100%" height="375">
-        <div class="download-container">
-          <a href="upload/ICT/SAMOSINO_RESLIFE1-ACTIVITY5.pdf" download class="download-btn">Download PDF</a>
-        </div>
-        <span>Author Name: Samosino, Louis Jefferson V.<br></span>
-        <span>Section: 11-Banatao (ICT)<BR></span>
-        <span>Date: April 1, 2023</span>
-      </div>
-    
-      <div class="research-item">
-        <embed src="upload/ICT/PORTILLO_RESLIFE1-ACTIVITY5.pdf" width="100%" height="375">
-        <div class="download-container">
-          <a href="upload/ICT/PORTILLO_RESLIFE1-ACTIVITY5.pdf" download class="download-btn">Download PDF</a>
-        </div>
-        <span>Author Name: Portillo, Jade Bianca <br></span>
-        <span>Section: 11-Banatao (ICT)<BR></span>
-        <span>Date: April 5, 2023</span>
-      </div>
+    <div class="preview-box" id="preview-box">
+      <!-- PDF preview will be shown here -->
     </div>
-    
+  </div>
+  
   <footer>
     <div class="footer-wrapper">
       <div class="footer-section">
@@ -202,7 +187,7 @@
           </div>
         </nav>
       </div>
-      <!--euning my loves-->
+
       <div class="footer-copyright">
         <p>©2024 Scapiz, Inc. All rights reserved.</p>
         <p>Privacy Policy.</p>
@@ -210,5 +195,26 @@
       </div>
     </div>
   </footer>
+  <script>
+    document.getElementById('file-input').addEventListener('change', function(e) {
+  const file = e.target.files[0];
+  if (file && file.type === 'application/pdf') {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const pdfPreview = document.getElementById('preview-box');
+      pdfPreview.innerHTML = `<embed src="${e.target.result}" type="application/pdf" width="100%" height="100%">`;
+    }
+    reader.readAsDataURL(file);
+  } else {
+    alert('Please select a PDF file.');
+  }
+});
+
+document.getElementById("submit-btn").addEventListener("click", function() {
+  // Refresh the page
+  location.reload();
+});
+
+  </script>
   </body>
 </html>
