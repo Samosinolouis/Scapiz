@@ -3,11 +3,9 @@ var pdfjsLib = window['pdfjs-dist/build/pdf'];
 function renderPDF(url, containerId) {
   pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
     var pdfContainer = document.getElementById(containerId);
-    var pageNum = 1;
-    var scale = 1.5;
 
-    pdfDoc_.getPage(pageNum).then(function(page) {
-      var viewport = page.getViewport({scale: scale});
+    pdfDoc_.getPage(1).then(function(page) {
+      var viewport = page.getViewport({scale: 1.5});
       var canvas = document.createElement('canvas');
       var ctx = canvas.getContext('2d');
       var renderContext = {
