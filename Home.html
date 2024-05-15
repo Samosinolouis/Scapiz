@@ -1,13 +1,13 @@
   <!DOCTYPE html>
-  <html lang="en">
+  <html class="sl-theme-dark">
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="icon" href="assets/logo-1.png" type="image/png">
       <title>Scapiz</title>
       <link rel="stylesheet" href="./styles.css">
-      <script src="https://kit.fontawesome.com/a81368914c.js"></script>
-      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      <script src="./script.js" defer></script>
     </head>
     <body>
       <nav class="nav">
@@ -126,31 +126,43 @@
   <html>
   <body>
       
-      <div class="heading">
-          <h2>Recently Uploaded Researches</h2>
+    <div class="heading">
+      <h2>Recently Uploaded Researches</h2>
+    </div>
+    
+    <div class="research-container">
+      <div class="research-item">
+        <iframe src="https://drive.google.com/file/d/1KFdDCgYLL1ju8m1X-vK3zvAhM_Fjl0UL/preview" style="width:100%; height:375px;"></iframe>
+        <div class="download-container"><div class="content">
+          <a href="https://drive.google.com/uc?export=download&id=1KFdDCgYLL1ju8m1X-vK3zvAhM_Fjl0UL" download class="btn" data-open>Download PDF</a>
+        </div>
+        </div>
+        <span>Author Name: Samosino, Louis Jefferson V.<br></span>
+        <span>Section: 11-Banatao (ICT)<BR></span>
+        <span>Date: April 1, 2023</span>
+      </div>
+    
+      <div class="research-item">
+        <iframe src="https://drive.google.com/file/d/1NE8BT1HD01dLl92XPvNiOGvMq04jTRqq/preview" style="width:100%; height:375px;"></iframe>
+        <div class="download-container"><div class="content">
+          <a href="https://drive.google.com/uc?export=download&id=1NE8BT1HD01dLl92XPvNiOGvMq04jTRqq" download class="btn" data-open>Download PDF</a>
+        </div>
+        </div>
+        <span>Author Name: Portillo, Jade Bianca <br></span>
+        <span>Section: 11-Banatao (ICT)<BR></span>
+        <span>Date: April 5, 2023</span>
       </div>
 
-      <div class="research-container">
-        <div class="research-item">
-            <iframe src="https://drive.google.com/file/d/1KFdDCgYLL1ju8m1X-vK3zvAhM_Fjl0UL/preview" style="width:100%; height:375px;"></iframe>
-            <div class="download-container">
-                <a href="https://drive.google.com/uc?export=download&id=1KFdDCgYLL1ju8m1X-vK3zvAhM_Fjl0UL" download class="download-btn">Download PDF</a>
-            </div>
-            <span>Author Name: Samosino, Louis Jefferson V.<br></span>
-            <span>Section: 11-Banatao (ICT)<BR></span>
-            <span>Date: April 1, 2023</span>
-        </div>
+    <dialog id="modal">
+      <h2>Welcome to Our Newsletter</h2>
+      <p>Stay up to date with the latest news and updates by subscribing to our newsletter.</p>
+      <p>We respect your privacy. Your information will not be shared with third parties.</p>
+      <div>
+        <button class="modal-btn" data-close>Agree</button>
+        <button class="modal-btn" data-close>Close</button>
+      </div>
+    </dialog>
     
-        <div class="research-item">
-          <iframe src="https://drive.google.com/file/d/1NE8BT1HD01dLl92XPvNiOGvMq04jTRqq/preview" style="width:100%; height:375px;"></iframe>
-            <div class="download-container">
-                <a href="https://drive.google.com/uc?export=download&id=1NE8BT1HD01dLl92XPvNiOGvMq04jTRqq" download class="download-btn">Download PDF</a>
-            </div>
-            <span>Author Name: Portillo, Jade Bianca <br></span>
-            <span>Section: 11-Banatao (ICT)<BR></span>
-            <span>Date: April 5, 2023</span>
-        </div>
-    </div>    
       
     <footer>
       <div class="footer-wrapper">
@@ -205,5 +217,6 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/boosted@5.3.3/dist/js/boosted.bundle.min.js" integrity="sha384-3RoJImQ+Yz4jAyP6xW29kJhqJOE3rdjuu9wkNycjCuDnGAtC/crm79mLcwj1w2o/" crossorigin="anonymous"></script>
     </body>
   </html>
