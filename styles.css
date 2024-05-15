@@ -331,8 +331,7 @@ ul {
     margin-bottom: 40px; /* Add some bottom margin for spacing */
     margin-top: 40px;
 }
-/* research sec */
-
+/* researches */
 .download-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -340,20 +339,25 @@ ul {
   color: #416FB5;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.research-item img {
+.download-btn:hover {
+  background-color: #416FB5;
+  color: #fff;
+}
+
+.research-item iframe {
   width: 100%;
-  height: 300px; /* Adjust this value as needed */
-  object-fit: contain;
+  height: 375px; /* Adjust this value as needed */
+  border: none;
 }
-
 
 .download-container {
   margin-top: 20px;
   margin-bottom: 30px;
-}  
+  text-align: center;
+}
 
 .research-container {
   display: flex;
@@ -369,6 +373,7 @@ ul {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #416FB5;
   transition: transform 0.3s ease-in-out;
+  color: #fff; /* Ensures text is readable */
 }
 
 .research-item:hover {
@@ -378,21 +383,131 @@ ul {
 .research-item h3 {
   margin-bottom: 10px;
   font-size: 18px;
-  color: #333;
+  color: #fff;
 }
 
 .research-item p {
   margin-bottom: 10px;
   font-size: 14px;
-  color: #666;
+  color: #f0f0f0;
+}
+
+.research-item span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #f0f0f0;
 }
 
 @media screen and (max-width: 768px) {
   .research-item {
     width: 90%;
   }
+  .research-item iframe {
+    height: auto; /* Adjust image height for smaller screens */
+  }
 }
 
+/* Existing CSS remains unchanged */
+
+.details {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-label {
+  color: #ffffff;
+  margin-right: 15px; /* Add some margin to create spacing after the colon */
+  flex: 0 0 120px; /* Adjusted width */
+  font-weight: bold;
+  color: #555; /* Adjusted color */
+  font-size: 16px; /* Adjusted font size */
+}
+
+.detail-value {
+  flex-grow: 1;
+  color: #333;
+  font-size: 16px; /* Adjusted font size */
+}
+
+@media screen and (max-width: 768px) {
+  .detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px; /* Increased horizontal padding */
+  }
+
+  .detail-label {
+    margin-bottom: 5px;
+    flex: 0 0 auto; /* Allow label to grow as needed */
+  }
+
+  .detail-value {
+    font-size: 14px; /* Adjusted font size */
+  }
+}
+/* Table Styles */
+.table-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Add borders between rows */
+}
+
+.table th {
+  background-color: #416FB5;
+  color: #fff;
+  font-weight: 600;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternate row background color */
+}
+
+.table tbody tr:hover {
+  background-color: #f2f2f2; /* Hover background color */
+}
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+  .table-container {
+    overflow-x: auto;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table th,
+  .table td {
+    padding: 10px;
+    font-size: 14px; /* Adjusted font size for smaller screens */
+  }
+
+  .table th {
+    font-size: 16px; /* Adjusted font size for table headers */
+  }
+}
 
   /* footer */
 
