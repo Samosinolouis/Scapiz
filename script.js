@@ -1,13 +1,31 @@
-const openBtn = document.querySelector("[data-open]");
-const closeBtn = document.querySelector("[data-close]");
-const modal = document.querySelector("#modal");
+const navBar = document.querySelector(".navbar");
+const menuBtn = document.querySelector(".menu-btn");
+const mobileMenu = document.querySelector(".mobile-menu");
+const desktopMenu = document.querySelector(".menu");
+let prevScrollPos = window.scrollY;
 
-// Open the modal when the button is clicked
-openBtn.addEventListener("click", () => {
-  modal.showModal();
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("show");
+  navBar.classList.toggle("mobile-menu-active");
 });
 
-// Close the modal when the close button is clicked
-closeBtn.addEventListener("click", () => {
-  modal.close();
+window.addEventListener("scroll", function () {
+  let currScrollPos = window.scrollY;
+
+  if (currScrollPos > prevScrollPos) {
+    navBar.style.transform = `translateY(-105%)`;
+  } else {
+    navBar.style.transform = `translateY(0%)`;
+  }
+
+  prevScrollPos = currScrollPos;
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.querySelector('.menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+    });
 });

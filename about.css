@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600;700;800&display=swap");
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+    color: #ffffff;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.navbar {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu-links a,
+.log-in {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.log-in {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.heading {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.heading p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Team section styles */
+.about .team {
+    width: 100%;
+}
+
+.about .team h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Team members grid layout */
+.about .team-members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns for larger screens */
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Individual team member card styles */
+.about .team-member {
+    background-color: #2c2f33;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .about .team-members {
+        grid-template-columns: 1fr;
+        /* 1 column for small screens */
+    }
+}
+
+
+@media (max-width: 480px) {
+    .about .team-members {
+        grid-template-columns: 1fr;
+        /* 1 column for small screens */
+    }
+}
+
+
+.about .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    margin-bottom: 1rem;
+}
+
+.about .team-member h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.about .team-member p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #f0f0f0;
+}
+
+.card {
+    background-color: #2c2f33;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.team-member {
+    display: inline-block;
+    width: 300px;
+    margin: 0 16px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.team-member p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer {
+    width: 100%;
+    background-color: #416FB5;
+    padding: 3.5rem clamp(3rem, 6vw, 14rem);
+}
+
+.footer-wrapper {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.footer-subscribe {
+    max-width: clamp(20rem, 33vw, 33rem);
+}
+
+.footer-subscribe>h2 {
+    font-size: clamp(1.5rem, 2.3vw, 2.25rem);
+}
+
+.input-box input[type="email"] {
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+
+.input-box input[type="email"]::placeholder {
+    color: white;
+}
+
+@media (width <=53rem) {
+    .footer-subscribe {
+        max-width: 100%;
+    }
+}
+
+.input-box>input {
+    flex-grow: 1;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(3rem, 4vw, 7rem);
+}
+
+.footer-nav>div>h3 {
+    font-size: 1rem;
+}
+
+.footer-nav>div>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.footer-nav>div li {
+    font-size: 1.125rem;
+    font-weight: 700;
+    transition: opacity 200ms ease;
+}
+
+.footer-nav>div li:hover {
+    opacity: 0.5;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.875rem;
+    margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 1rem;
+    }
+}
+
+#about-us-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full height of the viewport */
+    text-align: center;
+    font-size: 2em;
+    /* Adjust the size as needed */
+}
+
+#about-us-section h1 {
+    font-size: 4em;
+    /* Adjust the size as needed */
+    margin-bottom: 0.5em;
+}
+
+#about-us-section p {
+    font-size: 1.5em;
+    /* Adjust the size as needed */
+    margin-bottom: 2em;
+    /* Space before the scroll indicator */
+}
+
+/* Scroll Indicator */
+#about-us-section::after {
+    content: '⇩ Scroll Down ⇩';
+    display: block;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 20px;
+    animation: bounce 2s infinite;
+}
+
+/* Keyframes for the bounce effect */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    #about-us-section {
+        font-size: 1.5em;
+    }
+
+    #about-us-section h1 {
+        font-size: 3em;
+    }
+
+    #about-us-section p {
+        font-size: 1.2em;
+    }
+
+    #about-us-section::after {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    #about-us-section {
+        font-size: 1.2em;
+    }
+
+    #about-us-section h1 {
+        font-size: 2.5em;
+    }
+
+    #about-us-section p {
+        font-size: 1em;
+    }
+
+    #about-us-section::after {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #about-us-section {
+        font-size: 1em;
+        height: auto;
+        /* Adjust height to fit content on small screens */
+        padding: 60px 0;
+        /* Add padding to avoid touching the viewport edges */
+    }
+
+    #about-us-section h1 {
+        font-size: 2em;
+    }
+
+    #about-us-section p {
+        font-size: 0.8em;
+    }
+
+    #about-us-section::after {
+        font-size: 0.8em;
+        bottom: 10px;
+        /* Adjust position for smaller screens */
+    }
+}
+
+
+#mission-statement {
+    background-color: #ffffff;
+    color: #171717;
+    padding: 4rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+#mission-statement:hover {
+    transform: scale(1.1);
+}
+
+#mission-statement h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #007bff;
+}
+
+#mission-statement p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    #mission-statement {
+        padding: 3rem;
+    }
+
+    #mission-statement h2 {
+        font-size: 2rem;
+    }
+
+    #mission-statement p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #mission-statement {
+        padding: 2rem;
+    }
+
+    #mission-statement h2 {
+        font-size: 1.5rem;
+    }
+
+    #mission-statement p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #mission-statement {
+        padding: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    #mission-statement h2 {
+        font-size: 1.2rem;
+    }
+
+    #mission-statement p {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,53 @@
+#welcome-scapiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    text-align: center;
+    padding: 4rem;
+    background-color: #171717; /* Match the theme color */
+    color: #ffffff; /* Text color for contrast */
+  }
+  
+  #welcome-scapiz .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  #welcome-scapiz h1 {
+    font-size: 4em; /* Large font size for the welcome message */
+    margin-bottom: 0.5em;
+  }
+  
+  #welcome-scapiz p {
+    font-size: 1.5em;
+    max-width: 800px; /* Set a max-width for optimal reading */
+    margin: auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    #welcome-scapiz h1 {
+      font-size: 3em;
+    }
+  
+    #welcome-scapiz p {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #welcome-scapiz {
+      height: auto; /* Adjust height for smaller screens */
+      padding: 2rem;
+    }
+  
+    #welcome-scapiz h1 {
+      font-size: 2em;
+    }
+  
+    #welcome-scapiz p {
+      font-size: 1em;
+    }
+  }
+  
