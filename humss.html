@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="sl-theme-dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/logo-1.png" type="image/png">
+  <title>Scapiz</title>
+  <link rel="stylesheet" href="./home.css">
+  <link rel="stylesheet" href="./navbar.css">
+  <link rel="stylesheet" href="./footer.css">
+  <link rel="stylesheet" href="./researches.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="./script.js" defer></script>
+  <script src="./researches.js" defer></script>
+</head>
+<style>
+    body {
+      padding-top: 200px;
+    }
+  </style>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#">
+        <img src="assets/logo-1.png" alt="Logo">
+      </a>
+    </div>
+    <div class="menu">
+      <div class="menu-links">
+        <a href="./Home.html">Home</a>
+        <a href="./researches.html">Researches</a>
+        <a href="./About.html">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <button class="log-in">Log In</button>
+    </div>
+    <div class="menu-btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <div class="menu-links">
+      <a href="./Home.html">Home</a>
+      <a href="./researches.html">Researches</a>
+      <a href="./About.html">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <button class="log-in">Log In</button>
+  </div>
+
+  <div class="mobile-menu">
+    <div class="menu-links">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Researches</a>
+    </div>
+    <button class="log-in">Log In</button>
+  </div>
+
+  <div class="category-dropdown">
+    <button onclick="toggleDropdown()" class="main-category-button">Choose Category</button>
+    <div id="categoryDropdown" class="dropdown-content">
+      <a href="stem.html">STEM</a>
+      <a href="ict.html">ICT</a>
+      <a href="abm.html">ABM</a>
+      <a href="humss.html">HUMSS</a>
+    </div>
+  </div>
+  
+  
+
+  <div class="heading">
+    <h2 style="color: green;">Researches</h2>
+  </div>
+  
+  <div class="table-container">
+    <div class="research-container">
+      <div class="research-item">
+        <iframe src="https://drive.google.com/file/d/1KFdDCgYLL1ju8m1X-vK3zvAhM_Fjl0UL/preview"
+          style="width:100%; height:375px;"></iframe>
+        <div class="download-container">
+          <a href="https://drive.google.com/uc?export=download&id=1KFdDCgYLL1ju8m1X-vK3zvAhM_Fjl0UL" download
+            class="btn" data-open>Download PDF</a>
+        </div>
+        <div class="details">
+          <div class="detail-row">
+            <div class="detail-label" style="color: #ffffff;">Author: </div>
+            <div class="detail-value">SAMOSINO, LOUIS JEFFERSON</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label" style="color: #ffffff;">Section: </div>
+            <div class="detail-value">11-Banatao (ICT)</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label" style="color: #ffffff;">Date: </div>
+            <div class="detail-value">04/01/2023</div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="research-item">
+        <iframe src="https://drive.google.com/file/d/1NE8BT1HD01dLl92XPvNiOGvMq04jTRqq/preview"
+          style="width:100%; height:375px;"></iframe>
+        <div class="download-container">
+          <a href="https://drive.google.com/uc?export=download&id=1NE8BT1HD01dLl92XPvNiOGvMq04jTRqq" download
+            class="btn" data-open>Download PDF</a>
+        </div>
+        <div class="details">
+          <div class="detail-row">
+            <div class="detail-label" style="color: #ffffff;">Author:</div>
+            <div class="detail-value">PORTILLO, JADE BIANCA</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label" style="color: #ffffff;">Section:</div>
+            <div class="detail-value">11-Banatao (ICT)</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label" style="color: #ffffff;">Date:</div>
+            <div class="detail-value">04/05/2023</div>
+          </div>
+        </div>
+      </div>
+      <div class="research-item">
+        <iframe src="https://drive.google.com/file/d/1sow2zbheW70quWwEjf6LAMM0-9AulFhP/preview" width="640" height="480" allow="autoplay"></iframe>
+        <div class="download-container">
+          <a href="https://drive.google.com/uc?export=download&id=1EXAMPLE1" download
+            class="btn" data-open>Download PDF</a>
+        </div>
+        <div class="details">
+          <div class="detail-row">
+            <div class="detail-label" style="color: #ffffff;">Author:</div>
+            <div class="detail-value">CABUS A., DAYAN P., FABALINA S., MABOLOC B., ORACION S., PASCUA S.</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label" style="color: #ffffff;">Section:</div>
+            <div class="detail-value">11-Melchor (STEM)</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label" style="color: #ffffff;">Date:</div>
+            <div class="detail-value">09/02/2023</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="research-item">
+        <iframe src="https://drive.google.com/file/d/1g6RxWO1wXHlvv9hSJSuJnO6e4aC_WjlF/preview" width="640" height="480" allow="autoplay"></iframe>s
+        <div class="download-container">
+          <a href="https://drive.google.com/uc?export=download&id=2EXAMPLE2" download
+            class="btn" data-open>Download PDF</a>
+        </div>
+        <div class="details">
+          <div class="detail-row">
+            <div class="detail-label" style="color: #ffffff;">Author:</div>
+            <div class="detail-value">SORIANO, MYANNE ERIKA </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label" style="color: #ffffff;">Section:</div>
+            <div class="detail-value">11-Melchor (STEM)</div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-label" style="color: #ffffff;">Date:</div>
+            <div class="detail-value">04/12/2023</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <dialog id="modal">
+    <h2>Warning: Avoid Plagiarism!</h2>
+    <p>Copying or plagiarizing works uploaded in Scapiz is strictly prohibited.</p>
+    <p>Make sure to cite your sources properly and submit original content.</p>
+    <p>©2024 Scapiz, Inc. All rights reserved.</p>
+    <div>
+      <button class="modal-btn" data-close>Agree</button>
+      <button class="modal-btn" data-close>Close</button>
+    </div>
+</dialog>
+
+<div id="pagination" class="pagination">
+    <button class="prev-btn prev">Previous</button>
+    <div class="page-numbers"></div>
+    <button class="next-btn next">Next</button>
+</div>
+  <footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const openButtons = document.querySelectorAll("[data-open]");
+        const closeButtons = document.querySelectorAll("[data-close]");
+        const modal = document.querySelector("#modal");
+
+        openButtons.forEach(button => {
+          button.addEventListener("click", () => {
+            modal.showModal();
+          });
+        });
+
+        closeButtons.forEach(button => {
+          button.addEventListener("click", () => {
+            modal.close();
+          });
+        });
+
+        modal.addEventListener("click", function (event) {
+          if (event.target === modal) {
+            modal.close();
+          }
+        });
+      });
+    </script>
+    <div class="footer-wrapper">
+      <div class="footer-section">
+        <div class="footer-subscribe">
+          <h2>
+            Subscribe to the Scapiz® newsletter to stay up-to-date with the latest releases
+          </h2>
+          <div class="input-box">
+            <input type="email" placeholder="Email Address" />
+            <button>
+              <svg width="41" height="22" viewBox="0 0 41 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40.002 11.001H0.501953M40.002 11.001L30.002 1.00098M40.002 11.001L30.002 21.001"
+                  stroke="#0E100F"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Scapiz</h3>
+            <ul>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Showcase</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Linkedin</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!--euning my loves-->
+      <div class="footer-copyright">
+        <p>©2024 Scapiz, Inc. All rights reserved.</p>
+        <p>Privacy Policy.</p>
+        <p>Terms of Use.</p>
+      </div>
+    </div>
+  </footer>
+  </body>
+
+  </html>
